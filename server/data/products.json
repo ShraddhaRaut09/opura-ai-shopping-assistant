@@ -1,0 +1,138 @@
+[
+  {
+    "id": "1",
+    "name": "Air Spain",
+    "brand": "Opura",
+    "category": "Unisex Sneakers",
+    "price": 4500,
+    "originalPrice": 5500,
+    "discount": 18,
+    "rating": 4.2,
+    "reviews": 1800,
+    "inStock": true,
+    "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&h=600&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&h=600&fit=crop&grayscale",
+      "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=600&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1600269452121-4f2416e55c28?w=600&h=600&fit=crop"
+    ],
+    "colors": ["#000000", "#FFD700", "#1E90FF"],
+    "sizes": ["6 UK", "7 UK", "8 UK", "9 UK", "10 UK"],
+    "description": "Premium unisex sneakers with superior cushioning and breathable mesh upper. Ideal for casual wear and light sport activities.",
+    "features": ["Breathable Mesh Upper", "Air Cushion Sole", "Lightweight Design", "Non-slip Outsole"],
+    "tags": ["sneakers", "unisex", "casual", "sport", "lightweight"]
+  },
+  {
+    "id": "2",
+    "name": "CloudWalk Pro",
+    "brand": "Opura",
+    "category": "Running Shoes",
+    "price": 3800,
+    "originalPrice": 4800,
+    "discount": 20,
+    "rating": 4.5,
+    "reviews": 2340,
+    "inStock": true,
+    "image": "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=600&h=600&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=600&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=600&h=600&fit=crop&grayscale",
+      "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=600&h=600&fit=crop"
+    ],
+    "colors": ["#FFFFFF", "#FF4500", "#808080"],
+    "sizes": ["6 UK", "7 UK", "8 UK", "9 UK", "10 UK", "11 UK"],
+    "description": "Engineered for long-distance runners who demand performance and comfort. Features advanced foam technology for superior energy return.",
+    "features": ["ReactFoam Midsole", "Flyknit Upper", "Heel Counter Support", "Reflective Details"],
+    "tags": ["running", "sport", "performance", "foam", "marathon"]
+  },
+  {
+    "id": "3",
+    "name": "UrbanStep Elite",
+    "brand": "Opura",
+    "category": "Lifestyle Shoes",
+    "price": 5200,
+    "originalPrice": 6000,
+    "discount": 13,
+    "rating": 4.0,
+    "reviews": 980,
+    "inStock": true,
+    "image": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=600&h=600&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1539185441755-769473a23570?w=600&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1539185441755-769473a23570?w=600&h=600&fit=crop&grayscale",
+      "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=600&h=600&fit=crop"
+    ],
+    "colors": ["#8B4513", "#000000", "#F5F5DC"],
+    "sizes": ["7 UK", "8 UK", "9 UK", "10 UK"],
+    "description": "Sleek lifestyle sneakers blending street aesthetics with everyday comfort. Versatile enough for both office and casual outings.",
+    "features": ["Genuine Leather Upper", "Memory Foam Insole", "Rubber Outsole", "Premium Stitching"],
+    "tags": ["lifestyle", "casual", "leather", "premium", "office"]
+  },
+  {
+    "id": "4",
+    "name": "TrailBlazer X",
+    "brand": "Opura",
+    "category": "Trail Running",
+    "price": 6100,
+    "originalPrice": 7200,
+    "discount": 15,
+    "rating": 4.7,
+    "reviews": 3100,
+    "inStock": true,
+    "image": "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?w=600&h=600&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?w=600&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?w=600&h=600&fit=crop&grayscale"
+    ],
+    "colors": ["#228B22", "#FF6347", "#708090"],
+    "sizes": ["6 UK", "7 UK", "8 UK", "9 UK", "10 UK", "11 UK", "12 UK"],
+    "description": "Built for the toughest trails. Aggressive lugs, waterproof upper, and rock plate protection make this the ultimate off-road companion.",
+    "features": ["Waterproof Gore-Tex", "Rock Plate Protection", "Aggressive Lug Outsole", "Trail Gaiter Compatible"],
+    "tags": ["trail", "running", "outdoor", "waterproof", "hiking"]
+  },
+  {
+    "id": "5",
+    "name": "SlipOn Zen",
+    "brand": "Opura",
+    "category": "Slip-On Shoes",
+    "price": 2200,
+    "originalPrice": 2800,
+    "discount": 21,
+    "rating": 3.9,
+    "reviews": 560,
+    "inStock": true,
+    "image": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=600&h=600&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=600&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=600&h=600&fit=crop&grayscale"
+    ],
+    "colors": ["#000000", "#FFFFFF", "#C0C0C0"],
+    "sizes": ["5 UK", "6 UK", "7 UK", "8 UK", "9 UK"],
+    "description": "Effortless slip-on design with elastic side panels for easy on/off. Perfect for travel and everyday casual wear.",
+    "features": ["Elastic Side Panels", "Canvas Upper", "Padded Collar", "Flexible Sole"],
+    "tags": ["slip-on", "casual", "travel", "comfortable", "easy"]
+  },
+  {
+    "id": "6",
+    "name": "PowerStrike V2",
+    "brand": "Opura",
+    "category": "Basketball Shoes",
+    "price": 7500,
+    "originalPrice": 9000,
+    "discount": 16,
+    "rating": 4.6,
+    "reviews": 4200,
+    "inStock": true,
+    "image": "https://images.unsplash.com/photo-1584735175315-9d5df23860e6?w=600&h=600&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1584735175315-9d5df23860e6?w=600&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1584735175315-9d5df23860e6?w=600&h=600&fit=crop&grayscale"
+    ],
+    "colors": ["#FF0000", "#000000", "#FFFFFF"],
+    "sizes": ["7 UK", "8 UK", "9 UK", "10 UK", "11 UK", "12 UK"],
+    "description": "Dominate the court with PowerStrike V2. High-top ankle support, responsive cushioning, and durable traction pattern built for elite performance.",
+    "features": ["High-Top Ankle Support", "ZoomAir Cushioning", "Herringbone Traction", "Reinforced Toe Box"],
+    "tags": ["basketball", "sport", "high-top", "performance", "court"]
+  }
+]
