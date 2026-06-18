@@ -1,68 +1,69 @@
 # Opura AI Shopping Assistant
 
-An AI-powered shopping assistant built using React, Node.js, and Express.
+An AI-powered shopping assistant built using React.js, Node.js, and Express.js. The application helps users discover products through intelligent search, product recommendations, wishlist management, product comparison, and voice search.
+
+---
 
 ## Features
 
-- AI Product Search
-- Product Recommendations
-- Product Detail View
-- Product Comparison
-- Wishlist Management
-- Voice Search
-- Responsive UI
-- Mock AI Chat Assistant
-- REST API Integration
+* AI-powered Product Search
+* Product Recommendations
+* Product Details Page
+* Product Comparison (up to 3 products)
+* Wishlist Management
+* Voice Search
+* Responsive User Interface
+* Mock AI Shopping Assistant
+* REST API Integration
 
 ---
 
 ## Tech Stack
 
 ### Frontend
-- React.js (Vite)
-- React Router DOM
-- Axios
-- Context API
+
+* React.js (Vite)
+* React Router DOM
+* Axios
+* Context API
 
 ### Backend
-- Node.js
-- Express.js
-- CORS
-- Morgan
+
+* Node.js
+* Express.js
+* CORS
+* Morgan
+
+### Database
+
+* JSON-based Product Dataset
 
 ---
 
 ## Project Structure
 
+```text
 opura-ai-shopping-assistant
-
+│
 ├── client
-
-│ ├── src
-
-│ │ ├── components
-
-│ │ ├── pages
-
-│ │ ├── context
-
-│ │ ├── services
-
-│ │ └── App.jsx
-
-│ └── package.json
-
+│   ├── src
+│   │   ├── components
+│   │   ├── pages
+│   │   ├── context
+│   │   ├── services
+│   │   └── App.jsx
+│   └── package.json
+│
 ├── server
-
-│ ├── controllers
-
-│ ├── routes
-
-│ ├── data
-
-│ └── server.js
-
+│   ├── controllers
+│   ├── routes
+│   ├── data
+│   └── server.js
+│
+├── screenshots
+│
 └── README.md
+```
 
 ---
 
@@ -70,42 +71,53 @@ opura-ai-shopping-assistant
 
 ### AI Search
 
-Search examples:
+Example Searches:
 
-- running shoes
-- trail shoes
-- basketball shoes
-- budget shoes
-- premium shoes
+* Running Shoes
+* Trail Shoes
+* Basketball Shoes
+* Budget Shoes
+* Premium Shoes
 
 ### Product Cards
 
-- Product Image
-- Product Name
-- Price
-- Discount
-- Wishlist Button
-- Compare Button
+Each product card displays:
 
-### Product Details
+* Product Image
+* Product Name
+* Product Category
+* Product Price
+* Discount Information
+* Add to Wishlist
+* Add to Compare
 
-- Product Images
-- Description
-- Sizes
-- Colors
-- Features
+### Product Details Page
+
+Displays:
+
+* Product Image
+* Product Name
+* Product Price
+* Rating
+* Description
+* Features
+* Available Sizes
+* Available Colors
 
 ### Compare Products
 
-Compare up to 3 products.
+Users can compare up to three products side by side.
 
 ### Wishlist
 
-Add and remove products.
+Users can:
+
+* Add products to wishlist
+* Remove products from wishlist
 
 ### Voice Search
 
-Use microphone button to search products.
+Search products using microphone input.
 
 ---
 
@@ -113,75 +125,111 @@ Use microphone button to search products.
 
 ### Products
 
+```http
 GET /api/products
-
 GET /api/products/:id
+```
 
 ### AI Chat
 
+```http
 POST /api/chat
+```
 
 Request:
 
+```json
 {
   "message": "running shoes"
 }
+```
 
-### Compare
+### Compare Products
 
+```http
 POST /api/compare
+```
 
 Request:
 
+```json
 {
-  "ids": ["1","2","3"]
+  "ids": ["1", "2", "3"]
 }
+```
 
 ---
 
 ## Installation
 
-### Backend
+### Backend Setup
 
+```bash
 cd server
-
 npm install
-
 npm start
+```
 
-Server runs on:
+Backend runs on:
 
+```text
 http://localhost:5000
+```
 
-### Frontend
+### Frontend Setup
 
+```bash
 cd client
-
 npm install
-
 npm run dev
+```
 
 Frontend runs on:
 
+```text
 http://localhost:5173
+```
 
 ---
 
 ## Screenshots
 
-Add screenshots here before submission.
+### Home Page
 
-- Home Page
-- AI Search Results
-- Product Details
-- Compare Page
-- Wishlist Page
+![Home](screenshots/home.png)
+
+### Search Results
+
+![Search Results](screenshots/search-results.png)
+
+### Compare Products
+
+![Compare](screenshots/compare-page.png)
+
+### Wishlist
+
+![Wishlist](screenshots/wishlist-page.png)
+
+### Product Details
+
+![Product Details](screenshots/product-details.png)
+
+---
+
+## Future Enhancements
+
+* User Authentication
+* Shopping Cart
+* Order Management
+* Payment Gateway Integration
+* AI Recommendation Engine using LLM APIs
+* Product Reviews and Ratings
 
 ---
 
 ## Author
 
-Shraddha Vinesh Raut
+**Shraddha Vinesh Raut**
 
 B.Tech Computer Engineering
 
