@@ -196,11 +196,12 @@ http://localhost:5173
 
 ### Home Page
 
-![Home](screenshots/home.png)
+![Home](screenshots/Home.png)
 
 ### Search Results
 
-![Search Results](screenshots/search-results.png)
+![Search Results](screenshots/Search-Detail-1.png)
+![Search Results](screenshots/Search-Detail-2.png)
 
 ### Compare Products
 
@@ -208,11 +209,12 @@ http://localhost:5173
 
 ### Wishlist
 
-![Wishlist](screenshots/wishlist-page.png)
+![Wishlist](screenshots/Wishlist-page.png)
 
 ### Product Details
 
-![Product Details](screenshots/product-details.png)
+![Product Details](screenshots/Product-detail-1.png)
+![Product Details](screenshots/Product-detail-2.png)
 
 ---
 
