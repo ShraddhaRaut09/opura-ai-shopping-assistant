@@ -1,13 +1,17 @@
 import { useCompare } from "../context/CompareContext";
 import { useWishlist } from "../context/WishlistContext";
+import { useNavigate } from "react-router-dom";
 
-export default function ProductCard({ product, onClick }) {
+export default function ProductCard({ product }) {
   const { addToCompare } = useCompare();
   const { addToWishlist } = useWishlist();
+  
+
+  const navigate = useNavigate();
 
   return (
     <div
-      onClick={() => onClick(product)}
+      onClick={() => navigate(`/product/${product.id}`)}
       style={{
         width: "250px",
         background: "#fff",
@@ -58,26 +62,26 @@ export default function ProductCard({ product, onClick }) {
           }}
         >
           Add To Compare
-</button>
-          <button
-  onClick={(e) => {
-    e.stopPropagation();
-    addToWishlist(product);
-  }}
-  style={{
-    width: "100%",
-    padding: "10px",
-    marginTop: "10px",
-    border: "none",
-    borderRadius: "8px",
-    background: "#ff4d6d",
-    color: "#fff",
-    cursor: "pointer",
-  }}
->
-  Add To Wishlist
-</button>
-        
+        </button>
+
+        <button
+          onClick={(e) => {
+            e.stopPropagation();
+            addToWishlist(product);
+          }}
+          style={{
+            width: "100%",
+            padding: "10px",
+            marginTop: "10px",
+            border: "none",
+            borderRadius: "8px",
+            background: "#ff4d6d",
+            color: "#fff",
+            cursor: "pointer",
+          }}
+        >
+          Add To Wishlist
+        </button>
       </div>
     </div>
   );

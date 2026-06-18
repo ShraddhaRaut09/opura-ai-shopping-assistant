@@ -1,107 +1,107 @@
 import { useParams } from "react-router-dom";
+import products from "../data/products.json";
 
 export default function ProductDetails() {
   const { id } = useParams();
+
+  const product = products.find(
+    (p) => p.id === id
+  );
+
+  if (!product) {
+    return (
+      <div style={{ padding: "40px" }}>
+        Product not found
+      </div>
+    );
+  }
 
   return (
     <div
       style={{
         padding: "40px",
+        maxWidth: "1000px",
+        margin: "auto",
       }}
     >
-      <h1>Product Details</h1>
-
-      <p>Product ID: {id}</p>
-
       <div
         style={{
-          marginTop: "20px",
-          background: "#fff",
-          padding: "20px",
-          borderRadius: "10px",
-          boxShadow: "0 2px 10px rgba(0,0,0,0.1)",
+          display: "flex",
+          gap: "40px",
+          flexWrap: "wrap",
         }}
       >
-        <h2>Sample Product</h2>
-
         <img
-          src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=600"
-          alt="product"
+          src={product.image}
+          alt={product.name}
           style={{
-            width: "300px",
-            borderRadius: "10px",
+            width: "400px",
+            borderRadius: "12px",
           }}
         />
 
-        <h3>₹3800</h3>
-
-        <p>
-          Engineered for long-distance runners who demand
-          performance and comfort.
-        </p>
-
-        <h4>Sizes</h4>
-
         <div>
-          <button>6 UK</button>
-          <button>7 UK</button>
-          <button>8 UK</button>
-          <button>9 UK</button>
-        </div>
+          <h1>{product.name}</h1>
 
-        <h4>Colors</h4>
+          <h2>₹{product.price}</h2>
 
-        <div
-          style={{
-            display: "flex",
-            gap: "10px",
-          }}
-        >
+          <p>⭐ {product.rating}</p>
+
+          <p>
+            <strong>Category:</strong>{" "}
+            {product.category}
+          </p>
+
+          <p>
+            <strong>Discount:</strong>{" "}
+            {product.discount}% OFF
+          </p>
+
+          <p>
+            <strong>Description:</strong>
+          </p>
+
+          <p>{product.description}</p>
+
+          <p>
+            <strong>Features:</strong>
+          </p>
+
+          <ul>
+            {product.features.map((feature) => (
+              <li key={feature}>{feature}</li>
+            ))}
+          </ul>
+
+          <p>
+            <strong>Sizes:</strong>
+          </p>
+
+          <p>{product.sizes.join(", ")}</p>
+
+          <p>
+            <strong>Colors:</strong>
+          </p>
+
           <div
             style={{
-              width: "25px",
-              height: "25px",
-              borderRadius: "50%",
-              background: "#ffffff",
-              border: "1px solid #ccc",
-            }}
-          />
-
-          <div
-            style={{
-              width: "25px",
-              height: "25px",
-              borderRadius: "50%",
-              background: "#ff4500",
-            }}
-          />
-
-          <div
-            style={{
-              width: "25px",
-              height: "25px",
-              borderRadius: "50%",
-              background: "#808080",
-            }}
-          />
-        </div>
-
-        <div
-          style={{
-            marginTop: "20px",
-          }}
-        >
-          <button
-            style={{
-              marginRight: "10px",
+              display: "flex",
+              gap: "10px",
             }}
           >
-            🛒 Add To Cart
-          </button>
-
-          <button>
-            ⚖ Add To Compare
-          </button>
+            {product.colors.map((color) => (
+              <div
+                key={color}
+                style={{
+                  width: "30px",
+                  height: "30px",
+                  borderRadius: "50%",
+                  background: color,
+                  border: "1px solid #ccc",
+                }}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>

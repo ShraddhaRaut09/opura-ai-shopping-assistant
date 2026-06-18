@@ -57,6 +57,19 @@ export default function Sidebar() {
         >
           ⚖ Compare ({compareItems.length})
         </Link>
+
+        <Link
+  to="/wishlist"
+  style={{
+    textDecoration: "none",
+    color: "#333",
+    padding: "12px",
+    borderRadius: "8px",
+    background: "#f5f5f5",
+  }}
+>
+  ❤️ Wishlist ({wishlist.length})
+</Link>
       </nav>
 
       <div
